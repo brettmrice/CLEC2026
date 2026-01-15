@@ -376,7 +376,6 @@ font-weight: bold
 text-align: center;
 }
 iframe {
-border-radius: 10px;
 width: 80%;
 height: auto;
 aspect-ratio: 16 / 9;
@@ -406,6 +405,17 @@ transition: 0.3s scale;
 }
 img:hover {
 scale: 1.05;
+}
+a {
+color: #092F57;
+text-decoration: none;
+}
+a:focus {
+outline: none;
+}
+#prompts > ul {
+position: sticky;
+top: 62px;
 }
 </style>
 <div id="presentation" class="section level2 tabset">
@@ -461,11 +471,11 @@ to a clearer perspective on true student progression and mastery.</p>
 <h4><strong>REFERENCES</strong></h4>
 </div>
 </div>
-<div id="prompts" class="section level3">
-<h3>Prompts</h3>
+<div id="prompts" class="section level3 tabset">
+<h3 class="tabset">Prompts</h3>
 <div id="stage-1" class="section level4">
 <h4><strong>Stage 1</strong></h4>
-<hr>
+<p><br></p>
 <p><u><strong>System Instruction</strong></u></p>
 <p>You are a question generator to assess a Medical Laboratory Science
 student’s understanding of [insert topic]. Questions should be
@@ -662,7 +672,6 @@ judgement)</p>
 </div>
 <div id="stage-2" class="section level4">
 <h4><strong>Stage 2</strong></h4>
-<hr>
 <p><u><strong>System Instruction</strong></u></p>
 <p>[Insert Stage 1 System Instruction with the following appended]</p>
 <p>Instruction for option lengths (STRICT ENFORCEMENT):</p>
